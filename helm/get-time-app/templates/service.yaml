@@ -8,8 +8,8 @@ spec:
   type: {{ .Values.service.type }}
   ports:
     - port: {{ .Values.service.port }}
-      targetPort: http
+      targetPort: {{ .Values.service.targetport }}
       protocol: TCP
-      name: http
+      # name: http
   selector:
     {{- include "get-time-app.selectorLabels" . | nindent 4 }}
