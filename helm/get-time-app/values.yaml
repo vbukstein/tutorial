@@ -41,8 +41,8 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  type: ClusterIP
-  port: 8080
+  type: loadBalancer #type: loadBalancer for AWS only
+  port: 80
   targetport: 8080
 
 ingress:
