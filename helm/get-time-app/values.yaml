@@ -41,7 +41,7 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  type: loadBalancer
+  type: loadBalancer #type: loadBalancer for AWS only
   port: 80
   targetport: 8080
 
